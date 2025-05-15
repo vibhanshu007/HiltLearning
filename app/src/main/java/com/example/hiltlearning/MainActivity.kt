@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.material3.Text
 import com.example.hiltlearning.ui.theme.HiltLearningTheme
 import com.example.hiltlearning.view.PostScreen
 import dagger.hilt.android.AndroidEntryPoint
@@ -16,6 +17,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             HiltLearningTheme {
                 PostScreen()
+                Text("Hello Hilt!")
             }
         }
     }
