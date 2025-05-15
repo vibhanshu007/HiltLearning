@@ -8,6 +8,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import com.example.hiltlearning.viewmodel.PostViewModel
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.hiltlearning.data.model.Post
 
 @Composable
 fun PostScreen(viewModel: PostViewModel = hiltViewModel()) {
@@ -18,4 +19,9 @@ fun PostScreen(viewModel: PostViewModel = hiltViewModel()) {
             Text(text = post.title)
         }
     }
+}
+
+@Composable
+fun PostScreenItem(post: Post) {
+    Text(text = post.title)
 }
