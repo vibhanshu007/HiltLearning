@@ -1,6 +1,7 @@
 package com.example.hiltlearning
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -20,8 +21,9 @@ class MainActivity : ComponentActivity() {
             HiltLearningTheme {
                 PostScreen()
                 Text("Hello Hilt!")
-                val posts = listOf<Post>().first() // Replace with actual data
-                PostScreenItem(posts)
+                val posts = listOf<Post>() // Replace with actual data
+                PostScreenItem(posts.first())
+                Text("First commit")
             }
         }
     }
