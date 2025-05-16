@@ -24,6 +24,7 @@ class MainActivity : ComponentActivity() {
                 val posts = listOf<Post>() // Replace with actual data
                 PostScreenItem(posts.first())
                 Text("First commit")
+                Text("Second commit")
             }
         }
     }
