@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                 val posts = listOf<Post>() // Replace with actual data
                 PostScreenItem(posts.first())
                 Log.e("vibhanshu commit", "onCreate: ${posts.size}")
-
+                Log.e("vibhanshu commit 2", "onCreate: ${posts.size}")
             }
         }
     }
